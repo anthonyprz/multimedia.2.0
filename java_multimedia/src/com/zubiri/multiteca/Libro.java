@@ -29,8 +29,8 @@ public class Libro extends Obra{
 		this.numPaginas = numPaginas;
 	}
 	
-	public String formattedObra() {
+//	public String formattedObra() {
 		
-	}
+	//}
 
 }

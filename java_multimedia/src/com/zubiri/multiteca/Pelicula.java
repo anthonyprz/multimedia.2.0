@@ -31,8 +31,8 @@ public class Pelicula extends Obra{
 		this.interpretes = interpretes;
 	}
 	
-	public String formattedObra() {
+	//public String formattedObra() {
 		
-	}
+//	}
 
 }

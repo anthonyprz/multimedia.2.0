@@ -29,7 +29,7 @@ public class Disco extends Obra{
 		this.nCanciones = nCanciones;
 	}
 	
-	public String formattedObra() {
+//	public String formattedObra() {
 		
-	}
+	//}
 }
