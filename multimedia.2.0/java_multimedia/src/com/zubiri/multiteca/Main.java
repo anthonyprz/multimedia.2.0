@@ -1,11 +1,18 @@
 package com.zubiri.multiteca;
 
+import java.util.Scanner;
+
 public final class Main {
 
 	public static void main(String[] args) {
 		
-		Obra obra = new Obra();
-	
+		Libro libro = new Libro();
+		libro.formattedObra();
+		
+		
+	//libro.Libro();
+		
+
 	}
 
 }
