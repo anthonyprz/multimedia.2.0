@@ -91,11 +91,11 @@ public class Multiteca {
 				"\n*******************************************" +
 				"\n*----------Multiteca al completo----------*";
 				for (int f = 0; f < multiteca.size(); f++) {
-				multitecaFormateada += multiteca.get(f).formattedObra();
+				multitecaFormateada += multiteca.get(f).formattedObra() + "\n" 
+				+ "--------------------------------------------------";
 				}
 				multitecaFormateada +=
-				"\n*------------------FIN--------------------*" +
-				"\n*******************************************";
+				"\n*------------------FIN--------------------*";
 				return multitecaFormateada;
 
 	}

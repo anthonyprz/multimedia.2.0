@@ -9,11 +9,10 @@ public final class Main {
 		int opcion, opcion2;
 		do{
 			Scanner sc = new Scanner(System.in);
-			System.out.println("*******************************");
-			System.out.println("*Menu: *");
-			System.out.println("*******************************");
+	
+			System.out.println("-------------Menu-------------");
 			System.out.println("Llenar multiteca--------------1");
-			System.out.println("Buscar obra-------------------2");
+			System.out.println("mostrar obras-----------------2");
 			opcion = sc.nextInt();
 			switch (opcion) {
 				case 1:
