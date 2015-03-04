@@ -25,10 +25,10 @@ public abstract class Obra {
 	public Obra(Scanner sc){
 		System.out.println("Dime el nombre de la obra:");
 		this.setTitulo(sc.next());
-		System.out.println("Dime el nombre de la obra:");
+		System.out.println("dime el año de edicion:");
 		this.setAñoEdicion(sc.nextInt());
-		System.out.println("Dime el nombre del artista:");
-		this.setAutor(artistas.buscarArtista(sc.next()));
+		this.setAutor(new Artista(sc));
+		Multiteca.sumarObra();
 	}
 	
 	
@@ -60,8 +60,9 @@ public abstract class Obra {
 		this.titulo = titulo;
 	}
 	
-	public String formattedObra() {
+	public  String formattedObra() {
 		String obra =
+				
 				"\nTítulo:\t" + this.getTitulo()
 				+ "Año de edición:\t" + this.getAñoEdicion()
 				 + artista.formattedArtista();

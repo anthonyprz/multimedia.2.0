@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class Artista {
 
-	private String nombre;
-	private int añoNacimiento;
+	private static  String nombre;
+	private static  int añoNacimiento;
 	
 	public Artista(){}
 
-	/*public Artista(String nombre, int añoNacimiento) {
+	public Artista(String nombre, int añoNacimiento) {
 	
 		this.nombre = nombre;
 		this.añoNacimiento = añoNacimiento;
-	} */
+	} 
 	
 	public Artista(Scanner sc){
 		System.out.println("Introduce el nombre del artista: ");
@@ -22,17 +22,16 @@ public class Artista {
 		setAñoNacimiento(sc.nextInt());
 	}
 
-
-	public String getNombre() {
-		
-		return nombre;
-	}
 	 public String formattedArtista(){
 		String artista =
-				"\nNombre:\t" + getNombre()
-				+ "Año de nacimiento:\t" + getAñoNacimiento();
+				"\nNombre del artista: \t" + getNombre()
+				+ " Año de nacimiento: \t" + getAñoNacimiento();
 		
 		return artista;
+	}
+	public static String getNombre() {
+			
+		return nombre;
 	}
 	
 	public void setNombre(String nombre) {
@@ -51,17 +50,3 @@ public class Artista {
 	}
 	
 }
-
-
-/*	public Artista(String nombre, int añoNacimiento) {
-
-this.nombre = nombre;
-this.añoNacimiento = añoNacimiento;
-}
-*/
-/*public Artista(String linedArtista, String separator){
-
- String[] strArray = linedArtista.split(separator);
- this.setNombre(strArray[0]);
- this.setAñoNacimiento(Integer.parseInt(strArray[1]));
-}*/

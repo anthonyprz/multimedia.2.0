@@ -13,10 +13,10 @@ public class Libro extends Obra{
 		
 	}
 	public Libro(Scanner sc){
-		super();
+		super(sc);
 		System.out.println("Añadir la editorial");
 		this.setEditorial(sc.next());
-		System.out.println("Dime el puto numero de paginas:");
+		System.out.println("Dime el numero de paginas:");
 		this.setNumPaginas(sc.nextInt());
 		
 	}
@@ -42,6 +42,7 @@ public class Libro extends Obra{
 	
 	public String formattedObra() {
 		String libro =
+				super.formattedObra()+
 				"\nEditorial:\t" + this.getEditorial()
 				+ "num Paginas:\t" + this.getAñoEdicion();
 			//	 + formattedObra();
