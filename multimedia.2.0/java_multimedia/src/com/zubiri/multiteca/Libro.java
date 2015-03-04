@@ -45,7 +45,7 @@ public class Libro extends Obra{
 				super.formattedObra()+
 				"\nEditorial:\t" + this.getEditorial()
 				+ "num Paginas:\t" + this.getAñoEdicion();
-			//	 + formattedObra();
+			
 				
 				return libro;
 	}

@@ -4,20 +4,29 @@ import java.util.Scanner;
 
 public class Artistas {
 
-	ArrayList<Artista> artistas = new ArrayList<Artista>();
+	static ArrayList<Artista> artistas = new ArrayList<Artista>();
 	Scanner sc = new Scanner(System.in);
 	
-	Artista artista = new Artista();
+	//Artista artista = new Artista();
 	public Artistas(){}
 	
-	public void crearArtista(){
+/*	public void crearArtista(){
 		
 		System.out.println("Introduce el nombre del artista: ");
 		artista.setNombre(sc.next());
 		System.out.println("Introduce el año de nacimiento: ");
 		artista.setAñoNacimiento(sc.nextInt());
 		
-	}
+	}*/
+	public static ArrayList<Artista> crearArtistas(Scanner sc){
+		int opcion;
+		System.out.println("¿Cuantos artistas son?: ");
+		opcion = sc.nextInt();
+		for (int a = 0; a < opcion; a++) {
+		artistas.add(new Artista(sc));
+		}
+		return artistas;
+		}
 	
 	
 	public Artista buscarArtista(String nombre){
@@ -34,6 +43,9 @@ public class Artistas {
 		return artista;
 	}
 	
+	public static void anadirArtista(Artista artista){
+		artistas.add(artista);
+		}
 	//Getters y setters
 		public ArrayList<Artista> getArtistas() {
 			return artistas;

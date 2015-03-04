@@ -15,14 +15,14 @@ public class Artista {
 		this.añoNacimiento = añoNacimiento;
 	} 
 	
-	public Artista(Scanner sc){
+	public   Artista(Scanner sc){
 		System.out.println("Introduce el nombre del artista: ");
 		this.setNombre(sc.next());
 		System.out.println("Introduce el año de nacimiento: ");
 		setAñoNacimiento(sc.nextInt());
 	}
 
-	 public String formattedArtista(){
+	 public static String formattedArtista(){
 		String artista =
 				"\nNombre del artista: \t" + getNombre()
 				+ " Año de nacimiento: \t" + getAñoNacimiento();
@@ -34,19 +34,19 @@ public class Artista {
 		return nombre;
 	}
 	
-	public void setNombre(String nombre) {
+	public  void setNombre(String nombre) {
 		
 		this.nombre = nombre;
 	}
 	
-	public int getAñoNacimiento() {
+	public static int getAñoNacimiento() {
 		
 		return añoNacimiento;
 	}
 
-	public void setAñoNacimiento(int añoNacimiento) {
+	public static void setAñoNacimiento(int añoNacimiento) {
 		
-		this.añoNacimiento = añoNacimiento;
+		añoNacimiento = añoNacimiento;
 	}
 	
 }

@@ -29,13 +29,13 @@ public class Multiteca {
 		 opcion = sc.nextInt();
 		 switch (opcion) {
 			 case 1:
-			// multiteca.add(new Pelicula(sc));
+			 multiteca.add(new Pelicula(sc));
 			 break;
 			 case 2:
 			 multiteca.add(new Libro(sc));
 			 break;
 			 case 3:
-			 //multiteca.add(new Disco(sc));
+			 multiteca.add(new Disco(sc));
 			 default:
 			 break;
 		 }
